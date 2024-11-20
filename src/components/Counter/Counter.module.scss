@@ -15,20 +15,23 @@
 }
 
 .btn {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
 
     &_blue {
-        margin: 20px;
-        padding: 15px;
-        border: 1px solid black;
-        border-radius: 10px;
+        @extend .btn;
         background-color: rgb(162, 162, 255);
     }
 
     &_red {
-        margin: 20px;
-        padding: 15px;
-        border: 1px solid black;
-        border-radius: 10px;
+        @extend .btn;
         background-color: rgb(244, 137, 137);
+    }
+
+    &_reset {
+        @extend .btn;
+        background-color: rgb(117, 98, 98);;
     }
 }
